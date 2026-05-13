@@ -715,20 +715,29 @@
                 <a href="#contacto">Contacto</a>
             </nav>
             <div class="nav-actions">
-                <button class="control-btn" id="paletteBtn" title="Cambiar paleta de colores">🎨</button>
-                <button class="control-btn" id="themeBtn" title="Cambiar tema">🌙</button>
+                <!-- <button class="control-btn" id="paletteBtn" title="Cambiar paleta de colores">🎨</button> -->
+                <!-- <button class="control-btn" id="themeBtn" title="Cambiar tema">🌙</button> -->
                 <button class="control-btn cart-btn" id="cartBtn" title="Ver carrito">
                     🛒
                     <span class="cart-count" id="cartCount">0</span>
                 </button>
-                <button class="nav-btn" id="searchBtn" aria-label="Buscar">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <button class="nav-btn" id="searchBtn" aria-label="Buscar" title="Buscar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
                 </button>
+                <!--
                 <button class="nav-btn" id="cartBtn" aria-label="Carrito">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <path d="M16 10a4 4 0 0 1-8 0"/>
+                    </svg>
                     <span class="cart-count" id="cartCount">0</span>
                 </button>
-                <button class="nav-btn" id="controlsBtn" aria-label="Configuración">
+                -->
+                <button class="nav-btn" id="controlsBtn" aria-label="Configuración"  title="Configuración">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
                 </button>
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
@@ -745,7 +754,11 @@
                         <div class="theme-toggle-thumb"></div>
                     </div>
                 </div>
-                <h4 style="margin-top: 16px;">Paleta de Colores</h4>
+                <div class="palette-theme" style="display: flex; align-items: center; gap: 10px;">
+                  <span>🎨</span>
+                    <h4 style="margin: 0;">Paleta de Colores</h4>
+                </div>
+                <!-- <div class="palette-theme"><span>🎨</span><h4 style="margin-top: 16px;">Paleta de Colores</h4></span></div> -->
                 <div class="palette-grid">
                     <div class="palette-option active" data-palette="rose" title="Rose Gold"></div>
                     <div class="palette-option" data-palette="lilac" title="Lilac Mint"></div>
@@ -1026,8 +1039,8 @@
                 categoryLabel: "Sérum",
                 price: 13,
                 originalPrice: null,
-                badge: "best",
-                badgeText: "Más Vendido",
+                //badge: "best",
+                //badgeText: "Más Vendido",
                 rating: 4.8,
                 ratingCount: 256,
                 //image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&h=800&fit=crop",
@@ -1060,8 +1073,8 @@
                 categoryLabel: "Sérum",
                 price: 28,
                 originalPrice: null,
-                badge: "new",
-                badgeText: "Nuevo",
+                //badge: "new",
+                //badgeText: "Nuevo",
                 rating: 4.7,
                 ratingCount: 189,
                 //image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&h=800&fit=crop",
@@ -1077,8 +1090,8 @@
                 categoryLabel: "Sérum",
                 price: 37,
                 originalPrice: null,
-                badge: "best",
-                badgeText: "Premium",
+                //badge: "best",
+                //badgeText: "Premium",
                 rating: 4.9,
                 ratingCount: 224,
                 //image: "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=600&h=800&fit=crop",
@@ -1111,8 +1124,8 @@
                 categoryLabel: "Sérum",
                 price: 25,
                 originalPrice: null,
-                badge: "sale",
-                badgeText: "Oferta",
+                //badge: "sale",
+                //badgeText: "Oferta",
                 rating: 4.7,
                 ratingCount: 165,
                 //image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&h=800&fit=crop",
@@ -1162,8 +1175,8 @@
                 categoryLabel: "Contorno de Ojos",
                 price: 20,
                 originalPrice: null,
-                badge: "new",
-                badgeText: "Nuevo",
+                //badge: "new",
+                //badgeText: "Nuevo",
                 rating: 4.8,
                 ratingCount: 198,
                 //image: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&h=800&fit=crop",
@@ -1177,7 +1190,7 @@
                 name: "The Ordinary Glycolic Acid 7% Toning Solution",
                 category: "tonico",
                 categoryLabel: "Tónico",
-                price: 15,
+                price: 17,
                 originalPrice: null,
                 badge: null,
                 badgeText: null,
@@ -1196,8 +1209,8 @@
                 categoryLabel: "Tónico",
                 price: 35,
                 originalPrice: null,
-                badge: "best",
-                badgeText: "Más Vendido",
+                //badge: "best",
+                //badgeText: "Más Vendido",
                 rating: 4.8,
                 ratingCount: 267,
                 //image: "https://images.unsplash.com/photo-1608248594941-39a5c744fe7b?w=600&h=800&fit=crop",
@@ -1213,8 +1226,8 @@
                 categoryLabel: "Tónico",
                 price: 27,
                 originalPrice: null,
-                badge: "new",
-                badgeText: "Nuevo",
+                //badge: "new",
+                //badgeText: "Nuevo",
                 rating: 4.9,
                 ratingCount: 201,
                 //image: "https://images.unsplash.com/photo-1556228852-6d35a3e98f76?w=600&h=800&fit=crop",
@@ -1247,8 +1260,8 @@
                 categoryLabel: "Crema",
                 price: 27,
                 originalPrice: null,
-                badge: "best",
-                badgeText: "Más Vendido",
+                //badge: "best",
+                //badgeText: "Más Vendido",
                 rating: 4.8,
                 ratingCount: 234,
                 //image: "https://images.unsplash.com/photo-1570194065650-d99fb4ee3313?w=600&h=800&fit=crop",
@@ -1264,8 +1277,8 @@
                 categoryLabel: "Crema",
                 price: 22,
                 originalPrice: null,
-                badge: "new",
-                badgeText: "Nuevo",
+                //badge: "new",
+                //badgeText: "Nuevo",
                 rating: 4.9,
                 ratingCount: 215,
                 //image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=600&h=800&fit=crop",
@@ -1281,8 +1294,8 @@
                 categoryLabel: "Protector Solar",
                 price: 19,
                 originalPrice: null,
-                badge: "best",
-                badgeText: "Esencial",
+                //badge: "best",
+                //badgeText: "Esencial",
                 rating: 4.9,
                 ratingCount: 412,
                 //image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&h=800&fit=crop",
@@ -1414,9 +1427,33 @@
                 requestAnimationFrame(() => setTimeout(() => card.classList.add('visible'), 50 + index * 80));
             });
 
-            document.querySelectorAll('.add-to-cart-btn').forEach(btn => { btn.addEventListener('click', (e) => { addToCart(parseInt(e.currentTarget.dataset.id)); const b = e.currentTarget; b.classList.add('added'); b.innerHTML = '✓ Agregado'; setTimeout(() => { b.classList.remove('added'); b.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Agregar`; }, 2000); }); });
-            document.querySelectorAll('.quick-view-btn, .quick-view-link, .product-image').forEach(btn => { btn.addEventListener('click', (e) => { e.preventDefault(); const id = parseInt(btn.dataset.id || btn.closest('.product-image')?.dataset.id); if (id) openModal(id); }); });
-            document.querySelectorAll('.card-reviews-toggle').forEach(t => { t.addEventListener('click', () => { const id = t.dataset.id, c = document.getElementById(`cardReviews-${id}`); if (c) { const exp = c.classList.toggle('expanded'); t.classList.toggle('expanded'); t.innerHTML = exp ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg> Reseñas` : `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg> Reseñas`; } }); });
+            document.querySelectorAll('.add-to-cart-btn').forEach(btn => { 
+                btn.addEventListener('click', (e) => { 
+                    addToCart(parseInt(e.currentTarget.dataset.id)); 
+                    const b = e.currentTarget; b.classList.add('added'); 
+                    b.innerHTML = '✓ Agregado'; 
+                    setTimeout(() => { 
+                        b.classList.remove('added'); 
+                        b.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg> Agregar`; }, 2000); 
+                        });
+                    });
+            document.querySelectorAll('.quick-view-btn, .quick-view-link, .product-image').forEach(btn => { 
+                btn.addEventListener('click', (e) => { 
+                    e.preventDefault(); const id = parseInt(btn.dataset.id || btn.closest('.product-image')?.dataset.id); if (id) openModal(id); }); 
+                });
+            document.querySelectorAll('.card-reviews-toggle').forEach(t => { 
+                t.addEventListener('click', () => { 
+                    const id = t.dataset.id, c = document.getElementById(`cardReviews-${id}`); if (c) { 
+                        const exp = c.classList.toggle('expanded'); t.classList.toggle('expanded'); 
+                        t.innerHTML = exp ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                            </svg> Reseñas` : `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/></svg> Reseñas`; } 
+                            }); 
+                        });
         }
 
         // ============================================
